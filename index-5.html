@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/65d7e48576.js" crossorigin="anonymous"></script>
+    <title>Bài 5</title>
+</head>
+
+<body>
+    <div class="container">
+        <div><i class="fa-regular fa-user"></i></div>
+        <form action="post" class="info">
+            <input class="button username" type="text" placeholder="USERNAME">
+            <input class="button password" type="password" placeholder="PASSWORD">
+            <button class="login">LOGIN</button>
+            <a class="content" href="#">Forgot password ?</a>
+        </form>
+    </div>
+    <style>
+        .container {
+            width: 339px;
+            height: 339px;
+            background-color: #F2994A;
+            border: 1px solid #FFFFFF;
+            margin: 0 auto;
+        }
+
+        .fa-regular {
+            color: #FFFFFF;
+            font-size: 50px;
+            display: flex;
+            justify-content: center;
+            margin-top: 32px;
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+
+        .button {
+            border: 1px solid #FFFFFF;
+            color: #FFFFFF;
+            background-color: transparent;
+            border-radius: 5px;
+            margin: 0 auto;
+            padding-left: 12px;
+            width: 195px;
+        }
+
+        .login {
+            border: 0;
+            color: #FFFFFF;
+            background-color: purple;
+            border-radius: 5px;
+            margin: 0 auto;
+            width: 211px;
+        }
+
+        input::placeholder {
+            color: #FFFFFF;
+        }
+
+        .login:hover {
+            cursor: pointer;
+        }
+
+        .button,
+        .login {
+            height: 41px;
+            margin-top: 23px;
+        }
+
+        .content {
+            color: #FFFFFF;
+            text-align: right;
+            width: 195px;
+            margin: 12px auto 0;
+            text-decoration: none;
+        }
+    </style>
+</body>
+
+</html>

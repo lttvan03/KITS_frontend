@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 4</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content-1">
+            <div class="box box-1"></div>
+            <div class="box box-2"></div>
+            <div class="box box-3"></div>
+            <div class="box box-4"></div>
+            <div class="box box-5"></div>
+            <div class="box box-6"></div>
+            <div class="box box-7"></div>
+        </div>
+        <div class="content-2">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+        </div>
+    </div>
+
+    <style>
+        .container{
+            display: flex;
+            align-items: center;
+        }
+        .content-1 {
+            display: flex;
+            height: 110px;
+            width: 385px;
+            margin-right: 10px;
+        }
+
+        .box {
+            background-color: rgba(242, 153, 74, 1);
+            width: 55px;
+            height: 55px;
+        }
+
+        .box:nth-child(even) {
+            align-self: flex-end;
+            border-radius: 0 0 10px 10px;
+        }
+
+        .box:nth-child(odd) {
+            border-radius: 10px 10px 0 0;
+        }
+
+        .square{
+            height: 55px;
+            width: 55px;
+            transform: rotate(45deg);
+            background-color: rgba(47, 128, 237, 1);
+            margin-top: 20px;
+        }
+    </style>
+</body>
+
+</html>
